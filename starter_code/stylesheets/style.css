@@ -9,95 +9,114 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 body {
-    background-color: #540B51;
-    font-family: 'Awesome', sans-serif;
+  background-color: #540b51;
+  font-family: "Awesome", sans-serif;
 }
 #nav-container {
-    margin: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-#slack-logo{
-    height: 26px;
+#slack-logo {
+  height: 26px;
 }
 
 /* items not displayed in mobile version begins */
 #menu-options {
-    display: none;
+  display: none;
 }
 #additional-icons {
-    display: none;
+  display: none;
 }
 /* ends */
 
 #nav-buttons > button {
-    background-color:#540B51;
-    padding: 10px;
-    border: 0px;
+  background-color: #540b51;
+  padding: 10px;
+  border: 0px;
 }
 .header-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
 }
-.header-container p{
-    color:white;
-    font-size: 0.9em;
-    margin: 1.2em;
+.header-container p {
+  color: white;
+  font-size: 0.9em;
+  margin: 1.2em;
 }
-.header-container strong{
-    color:#ECB12F;
+.header-container strong {
+  color: #ecb12f;
 }
 header h1 {
-    color: white;
-    text-align: center;
-    width: 80vw;
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: 600;
 }
-.header-buttons{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.header-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.header-buttons button{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 90vw;
-    font-weight:600;
-    text-align: center;
-    text-transform: uppercase;
-    border: 0px;
-    border-radius: 4px;
-    margin: 4px;
+.header-buttons button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 90vw;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0px;
+  border-radius: 4px;
+  margin: 4px;
 }
 #sign-up {
-    color:#540B51;
+  color: #540b51;
 }
-#google {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #4285F4;
+#google-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #4285f4;
 }
 #google-logo {
-    height: 40px;
-    margin: 10px;
-    background-color: white;
-    justify-self: start;
+  height: 40px;
+  margin: 10px;
+  background-color: white;
+  justify-self: flex-start;
 }
-#google span {
-    justify-self: center;
+#google-button span {
+  justify-self: center;
 }
-.product-img img{
-    width:100vw;
+.product-container img {
+  width: 100vw;
+}
+#sponsor-container{
+    background-color: #f3eae2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+#sponsor-logos img{
+    height: 30px;
+    margin: 20px 0;
+}
+#sponsor-logos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
