@@ -13,12 +13,11 @@ body {
   background-color: #540b51;
   font-family: "Awesome", sans-serif;
   font-size: 18px;
-  height: max-content;
   padding: 0;
   margin: 0;
 }
 ul {
-    padding: 0;
+  padding: 0;
 }
 #nav-container {
   margin: 20px;
@@ -45,19 +44,19 @@ ul {
   padding: 10px;
   border: 0px;
 }
-.header-container {
+#header-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 1em;
 }
-.header-container p {
+#header-container p {
   color: white;
   font-size: 0.7em;
   margin: 1.2em;
 }
-.header-container strong {
+#header-container strong {
   color: #ecb12f;
 }
 header h1 {
@@ -66,12 +65,12 @@ header h1 {
   text-align: center;
   font-weight: 600;
 }
-.header-buttons {
+#header-buttons {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.header-buttons button {
+#header-buttons button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,25 +99,26 @@ header h1 {
   background-color: white;
   align-self: start;
 }
-
-#google-button span{
+#google-button span {
   color: white;
   position: absolute;
   justify-items: center;
 }
-.product-container img {
-  width: 100vw;
+#product-container img{
+  width: 100%;
   padding-top: 20px;
+}
+main{
+    width:100vw;
 }
 #sponsor-container {
   background-color: #f3eae2;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
-  padding-bottom:30px;
+  width: 100vw;
+  padding-bottom: 30px;
 }
 #sponsor-container p {
   font-size: 12px;
@@ -127,7 +127,7 @@ header h1 {
 }
 #sponsor-logos img {
   height: 30px;
-  margin: 40px 2px 20px;
+  margin: 20px;
 }
 #sponsor-logos {
   display: flex;
@@ -143,6 +143,7 @@ header h1 {
   margin: 0;
   padding-top: 40px;
   text-align: center;
+  width: 100%;
 }
 .info h3 {
   color: #540b51;
@@ -166,7 +167,6 @@ header h1 {
 .info ul li {
   margin-bottom: 20px;
 }
-
 .welcome {
   color: white;
   text-align: center;
@@ -187,7 +187,7 @@ header h1 {
   justify-content: center;
   align-items: center;
   height: 50px;
-  width: 90vw;
+  width: 80vw;
   text-align: center;
   text-transform: uppercase;
   border: 0px;
@@ -219,23 +219,21 @@ hr {
   background-color: rgba(211, 211, 211, 0.873);
 }
 #footer-list li {
-    list-style-type: none;
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   margin: 20px 8px;
   font-size: 8px;
-
 }
 #download {
   color: #4285f4;
 }
-.footer-list-icon{
-    height: 8px;
-    object-fit:contain;
-    margin-right: 4px;
-    
+.footer-list-icon {
+  height: 8px;
+  object-fit: contain;
+  margin-right: 4px;
 }
 #social-media {
   list-style: none;
@@ -246,4 +244,31 @@ hr {
 }
 footer small {
   color: rgb(153, 150, 150);
+}
+
+/* Version for smaller screen size */
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  header > div {
+    width: 50%;
+  }
+  #header-buttons button {
+    width: 50vmax;
+  }
+  #header-container{
+    background-image: url("../images/background-singup.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #product-container img {
+    width: 50vw;
+  }
+  .info ul{
+    display: flex;
+    flex-direction: row;
+  }
 }
