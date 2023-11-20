@@ -109,7 +109,7 @@ header h1 {
   padding-top: 20px;
 }
 main{
-    width:100vw;
+   width: 100vw ;
 }
 #sponsor-container {
   background-color: #f3eae2;
@@ -271,4 +271,5 @@ footer small {
     display: flex;
     flex-direction: row;
   }
+
 }
