@@ -225,7 +225,7 @@ hr {
   justify-content: flex-start;
   align-items: center;
   margin: 20px 8px;
-  font-size: 8px;
+  font-size: 10px;
 }
 #download {
   color: #4285f4;
@@ -241,6 +241,9 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   margin: 0px 8px 30px;
+}
+#social-media li{
+  font-size: 20px;
 }
 footer small {
   color: rgb(153, 150, 150);
@@ -265,11 +268,41 @@ footer small {
     background-repeat: no-repeat;
   }
   #product-container img {
-    width: 50vw;
+    width: 48vw;
+  }
+  #sponsor-container p{
+    font-size: 18px;
+  }
+  .info h3{
+    font-size: 32px;
+  }
+  .info p{
+    font-size: 14px;
+    font-weight: 600;
   }
   .info ul{
     display: flex;
     flex-direction: row;
+    width: 90vw;
   }
-
+  .info ul li{
+    text-align: left;
+  }
+  .info ul li p span{
+    font-size: 38px;
+  }
+  .info ul li p{
+    font-size: 16px;
+  }
+  #footer-list strong{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #social-media{
+    justify-content: flex-start;
+  }
+  #social-media li{
+    margin-right: 80px;
+  }
 }
