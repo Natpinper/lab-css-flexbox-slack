@@ -21,7 +21,6 @@
   <!-- NAVBAR -->
   <nav>
     <div id="nav-container">
-    <div >
       <img id="slack-logo" src="./images/slack-logo.png" alt="Slack logo" />
 
       <ul id="menu-options">
@@ -38,15 +37,15 @@
           <a href="#">Pricing</a>
         </li>
       </ul>
-    </div>
+    
 
     <div id="nav-buttons">
       <button>
-        <img class="nav-icons"src="./images/icon-search.png" alt="Search icon">
+        <img class="nav-icons" id="nav-icons-search"src="./images/icon-search.png" alt="Search icon">
       </button>
 
       <button>
-        <img class="nav-icons" src="./images/icon-menu.png" alt="Menu icon">
+        <img class="nav-icons" id="nav-icons-menu" src="./images/icon-menu.png" alt="Menu icon">
       </button>
     </div>
 
@@ -55,9 +54,10 @@
           <a href="#">Sign in</a>
         </li>
         <li>
-          <a href="#">Try for free</a>
+          <a id=try-free href="#"><strong>Try for free</strong></a>
         </li>
       </ul>
+    </div>
     </div>
   </nav>
 
@@ -136,9 +136,10 @@
 
     <section class="welcome">
       <h3>Welcome to your new digital HQ</h3>
-
+      <div id="welcome-buttons">
       <button id="try-for-free"><strong>Try for free</strong></button>
       <button id="talk-to"><strong>Talk to sales</strong></button>
+    </div>
     </section>
 
   </main>
